@@ -1,0 +1,492 @@
+
+
+body{
+  background-color: #ededed;
+}
+/* Navbar Menu  */
+.navbar-brand {
+  position: relative;
+}
+
+#logo {
+  width: 80px;
+}
+
+#hamburgueria-title {
+  color: #FFF;
+  position: absolute;
+  bottom: 25px;
+  font-size: 23px;
+  left: 80px;
+  font-weight: bolder;
+}
+
+#main-navbar {
+  background-color: black;
+}
+
+
+
+#navbar {
+  min-width: 30%;
+}
+
+.navbar-nav {
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #FFF;
+  transition: .5s;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #999;
+}
+/* Navbar Menu Acaba aqui */
+
+/* Começando a Home body */
+/* Home */
+#main-container {
+  
+  color: black;
+ 
+}
+
+.section-title {
+  font-size: 24px;
+  border-left: 4px solid #F5C518;
+  padding-left: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+.section-description {
+  color: #CCC;
+  font-size: 18px;
+
+
+}
+
+.empty-list {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+}
+
+
+* button{
+  color: black;
+}
+ h5 .troco-btn{
+  font-size: 15px;
+}
+
+.card-btn {
+  color: #000;
+  background-color: #F5C518;
+  border: 2px solid #F5C518;
+  width: 100%;
+}
+
+.card-btn:hover {
+  background-color: transparent;
+  color: #F5C518;
+  border-color: #F5C518;
+  font-weight: bolder;
+}
+
+.bx-cart{
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 5px;
+}
+.addToCartBtn{
+  font-size: 25px;
+  font-weight: bolder;
+}
+.page-title:after {
+ 
+  width: 300px;
+  border-bottom: 2px solid #F5C518;
+  display: block;
+  margin: 0 auto;
+  padding-top: 7px;
+}
+.page-title {
+  text-align: center;
+  align-items: center;
+  width: 500px;
+  font-weight: bold;
+  border-bottom: 2px solid #F5C518;
+  display: block;
+  margin: 20px auto;
+  padding-top: 10px;
+}
+.page-description {
+  color: black;
+  text-align: center;
+  text-align: center;
+  border-bottom: 2px solid #F5C518;
+
+}
+.section-description {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* Home index.php dos cardapio */
+
+.container-fluid {
+  padding: 20px 0; /* Adiciona padding apenas na parte superior e inferior */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  max-width: 1200px; /* Define a largura máxima do contêiner */
+  background-color: #ededed; /* Define a cor de fundo do contêiner */
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  
+}
+
+.section-description {
+  font-size: 18px;
+  color: #666;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.movie-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card .card-img-top {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.card-img-top-bebida {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.card.movie-card:hover {
+  transform: translateY(-20px);
+}
+.card-body {
+  padding: 15px;
+}
+.card-btn:hover {
+  background-color: transparent;
+  color: #F5C518;
+  border-color: #F5C518;
+}
+#pedido-btn{
+  font-size: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Acaba aqui Home index.php dos cardapio */
+/* MSG */
+.msg-container {
+  
+  padding: 15px;
+}
+
+.msg {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 1px #000;
+  text-align: center;
+}
+
+.msg.error {
+  color: #842029;
+  background-color: #F8D7DA;
+  border-color: #F5C2C7;
+}
+
+.msg.success {
+  color: burlywood;
+  background-color: #D1E7DD;
+  border-color: #BADBCC;
+}
+/*  PARTE DA CESTA */
+/* Dashboard */
+
+
+.container-fluidProdutos {
+  padding: 20px 0; /* Adiciona padding apenas na parte superior e inferior */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  max-width: 600px; /* Define a largura máxima do contêiner */
+  background-color: #ededed; /* Define a cor de fundo do contêiner */
+}
+
+.card-img-top-produtos {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.card-img-top-cesta {
+  width: 50px; /* Defina o tamanho desejado para a largura */
+  height: 50px; /* Defina o tamanho desejado para a altura */
+  background-size: cover; /* Ajusta a imagem para cobrir o tamanho especificado */
+  background-position: center; /* Centraliza a imagem */
+  border: 2px solid #000; /* Adiciona uma borda de 2px sólida preta */
+  border-radius: 50%; /* Define o raio de curvatura para 50% (círculo) */
+}
+
+.produto-card-produtos{
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  margin-bottom: 20px; 
+
+}
+#add-carrinho-container {
+  text-align: right;
+}
+.small-card {
+  max-width: 100%; /* Define a largura máxima para o card */
+}
+
+.card-img-top {
+  max-width: 100%; /* Define a largura máxima para a imagem */
+  height: auto; /* Permite que a altura da imagem seja ajustada automaticamente */
+  border: 2px solid black;
+}
+table {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+thead th,
+tbody td {
+  padding: 10px;
+  text-align: left;
+  
+}
+
+thead th {
+  background-color: #f2f2f2; /* Cinza claro */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Cinza claro */
+}
+.td-card{
+  vertical-align: middle;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity button {
+  background-color: #d9d9d9; /* Cinza prateado */
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity button:hover {
+  background-color: #b3b3b3; /* Cinza mais escuro ao passar o mouse */
+}
+
+.quantity span {
+  margin: 0 10px;
+}
+
+#totalPrice {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+#carrinho-dashboard .table {
+  color: black;
+}
+
+#carrinho-dashboard .table th {
+  border-top: none;
+
+
+}
+#teste-id{
+  color: #000;
+}
+.table{
+  margin: 0;
+}
+
+
+#carrinho-dashboard .table tr {
+  padding: 15px 0;
+}
+
+.table-carrinho-title {
+  color: black;
+  font-weight: bold;
+  transition: .5s;
+}
+
+.table-carrinho-title:hover {
+  color: #F5C518;
+}
+
+.actions-column {
+  max-width: 75px;
+  text-align: center;
+}
+
+.actions-column form {
+  display: inline-block;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-weight: bold;
+  transition: .5s;
+  border: none;
+  font-size: 30px;
+}
+
+.edit-btn {
+  background-color: #0DCAF0;
+  color: #FFF;
+}
+
+.edit-btn:hover {
+  background-color: transparent;
+  color: #0DCAF0;
+  text-decoration: none;
+}
+
+
+.edit-icon{
+    color: black;
+
+}
+.delete-form{
+    display: inline-block;
+}
+.delete-icon{
+    color: red;
+
+}
+
+.delete-btn{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+  .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+      width: calc(50% - 20px);
+      padding: 10px;
+  }
+  .rodape-div{
+      padding: 60px 0px 40px 0px;
+  }
+}
+
+
+/* Footer Começa aqui */
+.rodape{
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 100%;
+  font-size: 14px;
+
+}
+.rodape a{
+  text-decoration: none;
+  color: white;
+}
+.rodape p{
+  margin-bottom: 5px;
+}
+.rodape-div{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  margin: auto;
+  align-items: stretch;
+ 
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+  display: flex;
+  width: calc(100% / 4 - 20px);
+  padding: 10px;
+}
+.rodape span{
+  font-size: 20px;
+  color: white;
+}
+.rodape-direitos{
+  width: calc(100% - 20px);
+  background-color: black;
+ 
+  text-align: center;
+}
+
+.elementoFooter{
+  text-align: center;
+  font-size: 20px;
+}
+
+.elementoFooter p{
+
+  margin-top: 10px;
+}
+.title-footer{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.social-midia  :hover{
+  color: #999;
+
+
+}
+footer {
+  margin-top: 20px; /* Defina a margem superior desejada para o footer */
+}
+
+/* Footer  Acaba aqui */
+
+

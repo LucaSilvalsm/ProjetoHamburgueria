@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%; /* Alteração: define a altura mínima para a barra lateral */
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #F5C518;
+    /* Remova a altura fixa */
+}
+header {
+    background-color: #F5C518;
+    padding: 5px 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-header {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.logo{
+    margin-top: 8px;
+}
+
+.info-header h3 {
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+.info-header img {
+    width: 80px;
+    margin-left: 8px;
+
+}
+
+.info-header svg {
+    margin: 0 10px;
+    align-items: center;
+}
+.bxs-offer{
+    margin: 10px;
+}
+.bxs-offer {
+    margin-top: 10px;
+}
+
+.bxs-notepad {
+    margin: 10px;
+}
+
+.fa-bell {
+    margin: 5px;
+}
+
+/* HOME SIDEBAR */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #F5C518;
+    min-height: 100%;
+
+}
+.sidebar a.sidebar-active{
+    border-left: 8px solid white;
+    background-color: black;
+    color: #F5C518;
+    font-weight: bolder;
+}
+.sidebar a:hover{
+    border-left: 8px solid white;
+    background-color: black;
+    color: #F5C518;
+    font-weight: bolder;
+}
+.sidebar h3 {
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+
+}
+
+
+hr {
+    margin-top: -1rem;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.content {
+    width: 80%;
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    z-index: 999; /* Garante que o menu esteja acima de outros elementos, se houver */
+
+}
+.titulo-secao{
+    border-radius: 10px ;
+    background-color: white;
+    padding: 10px;
+    
+}
+.titulo-secao h2{
+    font-size: 20px;
+}
+.titulo-secao p{
+    font-size: 18px;
+}
+.titulo-secao svg{
+    color: #F5C518;
+}
+.dashboard-title:after {
+ 
+  width: 300px;
+  border-bottom: 2px solid #F5C518;
+  display: block;
+  margin: 0 auto;
+  padding-top: 7px;
+}
+.dashboard-fluid{
+  border-radius: 50px solid black;
+ 
+}
+.dashboard-title {
+  text-align: center;
+  align-items: center;
+  width: 500px;
+  font-weight: bold;
+  border-bottom: 2px solid #F5C518;
+  display: block;
+  margin: 20px auto;
+  padding-top: 10px;
+}
+.dashboard-description {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+
+}
+.box-info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-info-single {
+   display: flex;
+   justify-content: space-between;
+   border-radius: 10px;
+   color: aliceblue;
+   width: 24%;
+  margin: 0 300px;
+   padding: 30px;
+   color: black;
+}
+.box-info-single svg{
+    font-size: 30px;
+}
+
+#vendas {
+    background-image: linear-gradient(to right top, #0aa7eb, #0098ed, #0088ec, #0675e8, #3e61e0);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0; /* Ajustado */
+}
+
+#pedidos {
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0; /* Ajustado */
+}
+
+#lucros {
+    background-image: linear-gradient(to right top, #5df8a7, #50f79f, #41f597, #30f48f, #13f287);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0; /* Ajustado */
+}
+
+#media {
+    background-image: linear-gradient(to right top, #eaf669, #ebf058, #edea46, #efe432, #f2de13);    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0; /* Ajustado */
+}
+body {
+ 
+    background-color: #f4f4f4;
+  }
+  
+  .form-container {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(222, 184, 135, 0.733);
+    border-radius: 2px solid black; 
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .form-right, .form-left {
+    width: 48%; /* Ajuste conforme necessário */
+    border: 3px solid black; /* Adiciona uma borda cinza de 1px */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px */
+    box-sizing: border-box; /* Garante que a largura da borda esteja incluída na largura total */
+  }
+  Com es
+  /* Estilos adicionais conforme necessário */
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    appearance: none;
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23707070"><path d="M7 10l5 5 5-5H7z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  .ingrediente,.tamanho {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  input[type="checkbox"] {
+    width: 50px;
+    height: 20px;
+    margin-right: 0px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #F5C518;
+    color: #F5C518;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(255, 196, 0);
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .page-title{
+      width: 100px;
+     font-size: 20px;
+     text-align: center;
+    }
+    .form-container {
+      flex-direction: column; /* Altera a direção do flex para coluna */
+    }
+  
+    .form-left,
+    .form-right {
+      width: 100%; /* Define a largura para 100% */
+      margin-bottom: 20px; /* Adiciona margem inferior para separar os formulários */
+    }
+    input[type="checkbox"] {
+      width: 40px;
+      height: 20px;
+      margin-right: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 964px) {
+    .page-title{
+      width: 300px;
+      font-size: 20px;
+      text-align: center;
+     }
+    .form-container {
+      flex-direction: column; /* Altera a direção do flex para coluna */
+    }
+  
+    .form-left,
+    .form-right {
+      width: 100%; /* Define a largura para 100% */
+      margin-bottom: 20px; /* Adiciona margem inferior para separar os formulários */
+    }
+    input[type="checkbox"] {
+      width: 40px;
+      height: 20px;
+      margin-right: 0px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .page-title{
+      width: 300%;
+      font-size: 20px;
+      text-align: center;
+     }
+    .form-container {
+      flex-direction: column; /* Altera a direção do flex para coluna */
+    }
+  
+    .form-left,
+    .form-right {
+      width: 100%; /* Define a largura para 100% */
+      margin-bottom: 20px; /* Adiciona margem inferior para separar os formulários */
+    }
+    input[type="checkbox"] {
+      width: 40px;
+      height: 20px;
+      margin-right: 0px;
+    }
+  }
+  .action {
+    color: black;
+    vertical-align: middle;
+
+}
+.action svg{
+  font-size: 20px;
+  color: black;
+  vertical-align: middle;
+
+}
+
+/* Parte do Novo Produto */
+.card-btn {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: #F5C518;  
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card-btn:hover{
+  background: black;
+  color: #F5C518;
+}
