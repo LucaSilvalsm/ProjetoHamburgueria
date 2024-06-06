@@ -82,7 +82,7 @@ $usuarioData = $usuarioDao->verifyToken(false);
             <h3> PRODUTOS</h3>
             <a href="<?=$BASE_URL ?>newproduct.php"><i class='bx bxs-report'></i> Adicionar Produto</a>
             <a href="#"><i class='bx bxs-report'></i> Atualizar Produto</a>
-            <a href="#"><i class='bx bxs-report'></i> Remover Produto</a>
+            <a href="<?=$BASE_URL?>produtos.php"><i class='bx bxs-report'></i> Remover Produto</a>
             <a href="#"><i class='bx bxs-badge-dollar'></i> Adicionar Promoção</a>           
             <br/>
             <hr>

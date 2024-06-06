@@ -23,6 +23,7 @@ $message = new Message($BASE_URL);
 // Instanciando os DAOs necessários
 $usuarioDao = new UsuarioDAO($conn, $BASE_URL);
 $produtoDao = new ProdutosDAO($conn, $BASE_URL);
+$id = filter_input(INPUT_GET, "id");
 
 // Verificando se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -73,11 +74,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             // Mensagem de sucesso
             $message->setMessage("Produto adicionado com sucesso!", "success", "../admin/newproduct.php");
+
+
         } else {
             // Mensagem de erro se algum campo obrigatório estiver vazio
             $message->setMessage("Todos os campos são obrigatórios. Por favor, preencha-os e tente novamente.", "error", "back");
         }
+    } elseif ($type === "deleteProduto"){
+        $produtoDao->destroy($id);
     }
 }
 
-?>
+

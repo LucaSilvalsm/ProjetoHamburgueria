@@ -412,3 +412,28 @@ body {
   background: black;
   color: #F5C518;
 }
+/* MSG */
+.msg-container {
+  
+  padding: 15px;
+}
+
+.msg {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 1px #000;
+  text-align: center;
+}
+
+.msg.error {
+  color: #842029;
+  background-color: #F8D7DA;
+  border-color: #F5C2C7;
+}
+
+.msg.success {
+  color: burlywood;
+  background-color: #D1E7DD;
+  border-color: #BADBCC;
+}
