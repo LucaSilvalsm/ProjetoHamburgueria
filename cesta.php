@@ -54,6 +54,7 @@ $_SESSION['objetosCarrinho'] = $objetosCarrinho;
 
 // Armazenar o total do pedido formatado na sessão
 $_SESSION['totalPedidoFormatado'] = $totalPedidoFormatado;
+
 ?>
 
 

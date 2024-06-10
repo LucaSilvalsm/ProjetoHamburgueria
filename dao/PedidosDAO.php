@@ -53,6 +53,9 @@ class PedidosDAO implements PedidosDAOInterface {
             $stmt->bindParam(":observacao", $pedidos->observacao);
             $stmt->bindParam(":itens_comprados", $pedidos->itens_comprados);
             $stmt->execute();
+            
+            // Obtenha o ID do pedido recém-inserido
+            $id_pedido = $this->conn->lastInsertId();
     
             // Exclui o carrinho do usuário
             $stmt = $this->conn->prepare("DELETE FROM carrinho WHERE usuario_id = :usuario_id");
@@ -62,6 +65,9 @@ class PedidosDAO implements PedidosDAOInterface {
             $this->conn->commit();
     
             $this->message->setMessage("Pedido Realizado com sucesso!", "success", "..//index.php");
+    
+            // Retorna o ID do pedido gerado
+            return $id_pedido;
         } catch (PDOException $e) {
             $this->conn->rollBack();
             echo "Erro: " . $e->getMessage();
